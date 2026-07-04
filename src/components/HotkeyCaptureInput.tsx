@@ -229,7 +229,7 @@ export default function HotkeyCaptureInput({
   const tooltipText = listening
     ? undefined
     : hasConflict
-      ? `Déjà choisis pour : ${conflicts!.join(", ")}`
+      ? `Déjà attribué à : ${conflicts!.join(", ")}`
       : reserved
         ? "Ce raccourcis est en conflit avec ceux de votre système."
         : value
@@ -275,7 +275,7 @@ export default function HotkeyCaptureInput({
             e.stopPropagation();
             onChange("");
           }}
-          title="Clear hotkey"
+          title="Effacer le raccourci"
         >
           ×
         </button>
