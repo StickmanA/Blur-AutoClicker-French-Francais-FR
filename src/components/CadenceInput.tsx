@@ -19,15 +19,15 @@ interface Props {
 }
 
 const INTERVAL_OPTIONS = [
-  { value: "s", label: "Second" },
+  { value: "s", label: "Seconde" },
   { value: "m", label: "Minute" },
-  { value: "h", label: "Hour" },
-  { value: "d", label: "Day" },
+  { value: "h", label: "Heure" },
+  { value: "d", label: "Jour" },
 ] as const;
 
 const SIMPLE_RATE_INPUT_MODE_OPTIONS = [
-  { value: "rate", label: "Rate" },
-  { value: "duration", label: "Delay" },
+  { value: "rate", label: "Fréquence" },
+  { value: "duration", label: "Période" },
 ] as const;
 
 function parseIntegerRaw(raw: string) {
@@ -212,7 +212,7 @@ export default function CadenceInput({ settings, update, variant }: Props) {
               }
             />
             <div className="vertical-devider vertical-devider--stretch" />
-            <span className="simple-control-label">Clicks Per</span>
+            <span className="simple-control-label">Clicks Par</span>
             <div className="vertical-devider vertical-devider--stretch" />
             <AdvDropdown
               value={settings.clickInterval}
@@ -291,7 +291,7 @@ export default function CadenceInput({ settings, update, variant }: Props) {
               />
             </div>
             <div className="vertical-devider vertical-devider--stretch" />
-            <span className="simple-control-label">Per Click</span>
+            <span className="simple-control-label">Par Click</span>
             <div className="vertical-devider vertical-devider--stretch" />
             <AdvDropdown
               value={settings.rateInputMode}
@@ -367,7 +367,7 @@ export default function CadenceInput({ settings, update, variant }: Props) {
                 />
               </div>
               <div className="adv-vdivider" />
-              <span className="adv-unf">Clicks Per</span>
+              <span className="adv-unf">Clicks Par</span>
               <div className="adv-vdivider" />
               <div className="adv-foc adv-foc-grow">
                 <AdvDropdown
