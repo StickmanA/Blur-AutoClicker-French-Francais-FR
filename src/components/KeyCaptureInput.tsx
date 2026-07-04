@@ -71,8 +71,8 @@ export default function KeyCaptureInput({
   }, []);
 
   const displayText = useMemo(() => {
-    if (listening) return "Press a key\u2026";
-    if (!value) return "Select key";
+    if (listening) return "Faites...\u2026";
+    if (!value) return "Sélectionner une touche";
     return applyKeyboardKeyCase(
       value,
       formatHotkeyForDisplay(value, layoutMap),
@@ -175,7 +175,7 @@ export default function KeyCaptureInput({
           }
         }}
         title={
-          hasConflict ? `Already bound to: ${conflicts!.join(", ")}` : undefined
+          hasConflict ? `Déjà attribué à : ${conflicts!.join(", ")}` : undefined
         }
       >
         {displayText}
@@ -188,7 +188,7 @@ export default function KeyCaptureInput({
             e.stopPropagation();
             onChange("");
           }}
-          title="Clear key"
+          title="Effacer le raccourci"
         >
           ×
         </button>
