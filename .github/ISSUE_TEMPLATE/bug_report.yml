@@ -1,5 +1,5 @@
 name: Bug report
-description: Report a problem in Blur Auto Clicker
+description: Signaler un problème avec Blur Auto Clicker
 title: "[Bug]: "
 labels:
   - bug
@@ -7,61 +7,61 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting. Fill in what you can — rough info is better than nothing. Screenshots are very welcome.
+        Merci du signalement. Remplissez ce que vous pouvez — toute information est précieuse. Des captures d'écrans sont appréciées.
 
   - type: checkboxes
     id: checks
     attributes:
       label: Checked
       options:
-        - label: I searched existing issues and didn't find this one.
+        - label: J'ai vérifié qu'il n'y a pas de tickets identitiques
           required: true
 
   - type: input
     id: version
     attributes:
-      label: Blur Auto Clicker version
-      placeholder: "Example: 3.5.0"
+      label: Version Blur Auto Clicker
+      placeholder: "Exemple: 3.5.0"
     validations:
       required: true
 
   - type: textarea
     id: settings
     attributes:
-      label: What mode and settings were you using?
+      label: Quels paramètres utilisiez vous ?
       placeholder: |
-        Simple mode, left mouse, toggle, 50 CPS
+        Mode simple, click gauche, on/off, 50 CPS
     validations:
       required: false
 
   - type: textarea
     id: steps
     attributes:
-      label: Steps to reproduce
+      label: Comment reproduire le bug
       placeholder: |
-        1. Open the app
-        2. Switch to Advanced mode
-        3. Set speed to 100 CPS
-        4. Start clicking
+        1. Ouvrir l'app
+        2. Activer le mode avancé 
+        3. Mettre 100 CPS
+        4. Commencer le programme
     validations:
       required: true
 
   - type: textarea
     id: expected
     attributes:
-      label: What did you expect to happen?
+      label: Qu'est ce qui est censé se passer ?
     validations:
       required: true
 
   - type: textarea
     id: actual
     attributes:
-      label: What actually happened?
+      label: Qu'est ce qui s'est passé ?
     validations:
       required: true
 
   - type: textarea
     id: additional_context
     attributes:
-      label: Anything else?
-      description: Screenshots, logs, Windows version, recordings — anything helps.
+      label: Quelque chose d'autre ?
+      description: Capture d'écran, logs, version Windows, enregistrement — tout peut aider.
