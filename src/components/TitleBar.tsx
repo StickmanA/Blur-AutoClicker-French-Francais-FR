@@ -60,10 +60,10 @@ const DEFAULT_TITLE_STATE: TitleViewState = {
 };
 
 const STOP_REASON_TEXTS: Record<string, string> = {
-  "Stopped from UI": "Stopped from UI",
-  "Stopped from toggle": "Stopped from toggle",
-  "Stopped from hotkey": "Stopped from hotkey",
-  "Stopped from hold hotkey": "Stopped from hold hotkey",
+  "Stopped from UI": "Arreté depuis l'UI",
+  "Stopped from toggle": "Arreté avec l'on/off",
+  "Stopped from hotkey": "Arreté avec le raccorci",
+  "Stopped from hold hotkey": "Arreté car le raccourci a été relaché",
   Stopped: "Stopped",
   "Top-left corner failsafe": "Top-left corner failsafe",
   "Top-right corner failsafe": "Top-right corner failsafe",
