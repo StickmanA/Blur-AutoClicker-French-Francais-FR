@@ -1,55 +1,55 @@
-name: Feature request
-description: Suggest an idea for Blur Auto Clicker
+name: Suggérer une amélioration
+description: Suggérer une idée pour Blur Auto Clicker
 title: "[Feature]: "
 labels:
-  - enhancement
+  Amélioration
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for the idea. Tell us what you want and why.
+        Merci pour la suggéstion. Que voulez vous et pourquoi ?
 
   - type: checkboxes
     id: checks
     attributes:
-      label: Checked
+      label: Coché
       options:
-        - label: I searched existing issues and didn't find a similar request.
+        - label: J'ai vérifier qu'il n'y a pas eu de requete similaire précédemment
           required: true
 
   - type: textarea
     id: problem
     attributes:
-      label: What's missing or inconvenient?
-      placeholder: I want to be able to ...
+      label: Que manque t'il ou qu'est ce qui ne vous convient pas ?
+      placeholder: Je veux pouvoir ...
     validations:
       required: true
 
   - type: textarea
     id: solution
     attributes:
-      label: How would you like it to work?
-      placeholder: It would be great if Blur Auto Clicker could ...
+      label: Comment voulez vous que ça fonctionne ?
+      placeholder: Ce serait bien si Blur Auto Clicker pouvait ...
     validations:
       required: true
 
   - type: dropdown
     id: area
     attributes:
-      label: What part of the app?
+      label: Quel domaine ?
       options:
         - UI / UX
-        - Clicking engine
-        - Hotkeys
-        - Overlay
-        - Settings / Storage
-        - Installer / Updates
-        - Other
+        - Programme de click
+        - Raccourcis clavier
+        - Superposition
+        - Paramètres / Stockage
+        - Installeur / Mise a jour
+        - Autre
     validations:
       required: true
 
   - type: textarea
     id: additional_context
     attributes:
-      label: Anything else?
-      description: Mockups, references, screenshots, workarounds you've tried.
+      label: Autre chose ?
+      description: Maquette, régérence, capture d'écran, hacks que vos avez essayé ...
