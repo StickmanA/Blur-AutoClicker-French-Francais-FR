@@ -216,7 +216,7 @@ export default function HotkeyCaptureInput({
   }, [listening]);
 
   const displayText = useMemo(() => {
-    if (listening) return "Press keys\u2026";
+    if (listening) return "Faites...\u2026";
 
     return value
       ? formatHotkeyForDisplay(value, layoutMap, defaultHotkeyLabels)
@@ -229,11 +229,11 @@ export default function HotkeyCaptureInput({
   const tooltipText = listening
     ? undefined
     : hasConflict
-      ? `Already bound to: ${conflicts!.join(", ")}`
+      ? `Déjà choisis pour : ${conflicts!.join(", ")}`
       : reserved
-        ? "This hotkey may conflict with system shortcuts"
+        ? "Ce raccourcis est en conflit avec ceux de votre système."
         : value
-          ? "Hotkey works even when Blur is minimized"
+          ? "Votre raccourci marche même quand Blur Auto_Clicker est réduit"
           : undefined;
 
   return (
