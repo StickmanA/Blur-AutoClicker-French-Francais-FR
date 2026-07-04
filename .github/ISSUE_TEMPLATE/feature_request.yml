@@ -14,7 +14,7 @@ body:
     attributes:
       label: Coché
       options:
-        - label: J'ai vérifier qu'il n'y a pas eu de requete similaire précédemment
+        - label: J'ai vérifié qu'il n'y a pas eu de requête similaire précédemment
           required: true
 
   - type: textarea
